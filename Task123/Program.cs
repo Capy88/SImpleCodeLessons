@@ -1,16 +1,37 @@
-﻿int[] a = { 60, 130, 74, 23, 4 };
-int minvalue = a[0];
-int maxvalue = a[0];
-for (int i = 0; i < a.Length; i++)
+﻿int[] weight = { 65, 140,74 };
+
+Console.WriteLine($"вес Максима = {weight[0]}");
+Console.WriteLine($"вес Ильи = {weight[1]}");
+Console.WriteLine($"вес Егора = {weight[2]}");
+
+int minValue = weight[0];
+int maxValue = weight[0];
+
+for (int i = 0; i < weight.Length; i++)
 {
-    if (a[i] < minvalue)
+    if (weight[i] < minValue)
     {
-        minvalue = a[i];
+        minValue = weight[i];
     }
-    if (a[i] > maxvalue)
+    if (weight[i] > maxValue)
     {
-        maxvalue = a[i];
+        maxValue = weight[i];
     }
 }
-Console.WriteLine(minvalue);
-Console.WriteLine(maxvalue);
+ 
+if (minValue * 2 < maxValue )   
+{
+    Console.WriteLine("правда");
+}
+else
+{
+    Console.WriteLine("ложь");
+}
+
+
+
+
+
+
+
+
