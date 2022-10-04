@@ -14,7 +14,7 @@
 //int[] weight = new int[weightStudents];
 List <int> weight = new List<int>();
 
-for (int i = 0; ; i++)
+for (int i = 1; ; i++)
 {
     Console.WriteLine($"Введите вес {i} студента,затем введите любую букву для выхода");
     int WeightOfStudent;
