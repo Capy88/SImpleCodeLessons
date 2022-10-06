@@ -15,6 +15,7 @@ while (true)
         inputedExit = true; //Эта переменная потом проверяется ниже и если она true, то программа больше ничего не делает
         break;
     }
+    
 
     int weightOfStudent;
     bool inputIsNumber = int.TryParse(inputstring, out weightOfStudent); // Проверяем, что ввел число, а не другой символ
@@ -23,9 +24,14 @@ while (true)
     {
         break;
     }
+    
 
     studentsWeight.Add(weightOfStudent);
 }
+
+Console.WriteLine("введите во сколько раз самый больший вес должен быть больше самого минимального веса");
+string multiplyString = Console.ReadLine();
+int multiplyWeight = int.Parse(multiplyString);
 
 if (inputedExit)
 {
@@ -39,69 +45,44 @@ else
     }
     else
     {
-      
-       /* CompareMinAndMax(studentsWeight);*/ 
-       //Вынес код в отдельную функцию, чтобы было более читабельно и понятно читать код
+
+        CompareMinAndMax(studentsWeight);
+        //Вынес код в отдельную функцию, чтобы было более читабельно и понятно читать код
         //Чтоб код умещался на одном экране так сказаить, а код функции уже можно было смотреть отдельно
         //И название функции уже говорит о том, что делает функция и внутрь нее даже можно не заглядывать, чтобы понять что она делает
     }
+
 }
 
-Console.WriteLine("введите во сколько раз самый большой вес должен быть больше самого минимального веса");
-string multiplyString = Console.ReadLine();
-int multiplyWeight = int.Parse(multiplyString);
+
 
 
 //Эта функция выполняет одно конкретное действие - из принимаемого снаружи массива чисел находит максимальное и минимальное и сравнивает их
-//void CompareMinAndMax(List<int> studentsWeight)
-//{
-//    int minWeight = studentsWeight[0];
-//    int maxWeight = studentsWeight[0];
-
-//    for (int i = 0; i < studentsWeight.Count; i++)
-//    {
-
-//        if (studentsWeight[i] < minWeight)
-//        {
-//            minWeight = studentsWeight[i];
-//        }
-//        if (studentsWeight[i] > maxWeight)
-//        {
-//            maxWeight = studentsWeight[i];
-//        }
-//    }
-
-//    if (minWeight * multiplyWeight < maxWeight)
-//    {
-//        Console.WriteLine($"Вес самого тяжелого больше чем в {multiplyWeight} раза больше наименьшего веса");
-//    }
-//    else 
-//    {
-//        Console.WriteLine($"Вес самого тяжелого не в {multiplyWeight} раза больше наименьшего веса");
-//    }
-//}
-
-int minWeight = studentsWeight[0];
-int maxWeight = studentsWeight[0];
-
-for (int i = 0; i < studentsWeight.Count; i++)
+void CompareMinAndMax(List<int> studentsWeight)
 {
+    int minWeight = studentsWeight[0];
+    int maxWeight = studentsWeight[0];
 
-    if (studentsWeight[i] < minWeight)
+    for (int i = 0; i < studentsWeight.Count; i++)
     {
-        minWeight = studentsWeight[i];
+
+        if (studentsWeight[i] < minWeight)
+        {
+            minWeight = studentsWeight[i];
+        }
+        if (studentsWeight[i] > maxWeight)
+        {
+            maxWeight = studentsWeight[i];
+        }
     }
-    if (studentsWeight[i] > maxWeight)
+
+    if (minWeight * multiplyWeight < maxWeight)
     {
-        maxWeight = studentsWeight[i];
+        Console.WriteLine($"Вес самого тяжелого больше чем в {multiplyWeight} раза больше наименьшего веса");
+    }
+    else
+    {
+        Console.WriteLine($"Вес самого тяжелого не в {multiplyWeight} раза больше наименьшего веса");
     }
 }
 
-if (minWeight * multiplyWeight < maxWeight)
-{
-    Console.WriteLine($"Вес самого тяжелого больше чем в {multiplyWeight} раза больше наименьшего веса");
-}
-else
-{
-    Console.WriteLine($"Вес самого тяжелого не в {multiplyWeight} раза больше наименьшего веса");
-}
