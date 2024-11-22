@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Less1", "Less1\Less1.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Otus Course", "Otus Course", "{081E24EA-D9E2-4076-99A5-18E9C2206315}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculator", "calculator\calculator.csproj", "{42F41C2D-517D-442C-9DCD-4F08283198B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "calculator", "calculator\calculator.csproj", "{42F41C2D-517D-442C-9DCD-4F08283198B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculator", "C:\Users\ADMIN\source\repos\calculator\calculator\calculator.csproj", "{BBEEA792-7D20-47BB-BA3D-29B4DE8D75FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{42F41C2D-517D-442C-9DCD-4F08283198B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42F41C2D-517D-442C-9DCD-4F08283198B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42F41C2D-517D-442C-9DCD-4F08283198B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBEEA792-7D20-47BB-BA3D-29B4DE8D75FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBEEA792-7D20-47BB-BA3D-29B4DE8D75FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBEEA792-7D20-47BB-BA3D-29B4DE8D75FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBEEA792-7D20-47BB-BA3D-29B4DE8D75FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0C1A5F1D-1628-45C5-A87D-5D838AEB2AC4} = {6C22A3ED-5170-4CC3-911B-57FFD42B24FC}
 		{42F41C2D-517D-442C-9DCD-4F08283198B7} = {081E24EA-D9E2-4076-99A5-18E9C2206315}
+		{BBEEA792-7D20-47BB-BA3D-29B4DE8D75FE} = {081E24EA-D9E2-4076-99A5-18E9C2206315}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {87F2C5E0-09FE-457F-97FF-E32188AFF059}

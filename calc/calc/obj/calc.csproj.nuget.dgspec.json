@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\source\\repos\\calc\\calc\\calc.csproj": {}
+    "D:\\С#\\SImpleCodeLessons\\calc\\calc\\calc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\source\\repos\\calc\\calc\\calc.csproj": {
+    "D:\\С#\\SImpleCodeLessons\\calc\\calc\\calc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\source\\repos\\calc\\calc\\calc.csproj",
+        "projectUniqueName": "D:\\С#\\SImpleCodeLessons\\calc\\calc\\calc.csproj",
         "projectName": "calc",
-        "projectPath": "C:\\Users\\ADMIN\\source\\repos\\calc\\calc\\calc.csproj",
+        "projectPath": "D:\\С#\\SImpleCodeLessons\\calc\\calc\\calc.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\source\\repos\\calc\\calc\\obj\\",
+        "outputPath": "D:\\С#\\SImpleCodeLessons\\calc\\calc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
